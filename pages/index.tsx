@@ -18,14 +18,14 @@ export default function Home() {
       </Head>
       <div className={shareTechMono.className} style={{ height: 200, borderRadius: 8, background: 'black', display: 'flex', flexFlow:'column', alignItems: 'center', justifyContent: 'center', fontSize: 30 }}>
         <div>
-        // Who asked?
+          {"// Who asked?"}
         </div>
-        <div style={{opacity: 0.3}}>Stephen's coding adventures</div>
+        <div style={{opacity: 0.3}}>{`Stephen's coding adventures`}</div>
       </div>
       <ArticleFeed>
         {Object.keys(ARTICLES).map(key => {
           const article = ARTICLES[key];
-          return <ArticleButton href={`article/${key}`} date={article.date} img="" name={article.title}/>
+          return <ArticleButton key={key} href={`article/${key}`} date={article.date} img="" name={article.title}/>
         })}
       </ArticleFeed>
     </>

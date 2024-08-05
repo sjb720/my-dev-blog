@@ -24,7 +24,7 @@ type ArticleButtonProps = {
     return <Link onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} href={props.href} style={{ textDecorationLine: 'none' }}>
       <div style={{ background: "black", color: 'white', borderRadius: 8, overflow: 'hidden', position:'relative'}}>
         <div style={{ height: 300, background: `url("${props.img}")`, backgroundPosition: 'center', backgroundSize: 'cover', display: 'flex', alignItems: 'center', justifyContent:'center' }}>
-          <div style={{ width: '80%', height: 50, display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize:32, transition: 'transform 0.5s', textShadow: "#000 1px 0 10px", textAlign:'center', transform: isHovering ? "scale(1.1)" : "scale(1)" }}>
+          <div style={{ width: '80%', height: 50, display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize:32, transition: 'transform 0.5s', textShadow: "#000 1px 0 10px", textAlign:'center', background:'green', transform: isHovering ? "scale(1.1)" : "scale(1)" }}>
             {props.name}
           </div>
         </div>
